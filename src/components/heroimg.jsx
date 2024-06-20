@@ -1,9 +1,18 @@
 import "./heroimg.css";
 
-import React from "react";
+import React, { Component } from "react";
 
-const Heroimg = () => {
-  return <div></div>;
-};
+class Heroimg extends Component {
+  render() {
+    return (
+      <div className="heroImage">
+        <div className="heading">
+          <h1>{this.props.heading}</h1>
+          <p>{this.props.text}</p>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Heroimg;
