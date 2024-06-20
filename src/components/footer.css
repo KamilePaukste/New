@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  background-color: #c7cec9;
+}
+.footerContent {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.contactInfo {
+  color: #485342;
+}
+.contactInfo div {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.socialMedia {
+  color: #485342;
+}
+.socialMedia a {
+  color: #485342;
+}
+.socialMedia div :hover {
+  background-color: #dbe2dd;
+  opacity: 0.5;
+  border-radius: 10%;
+}
+.socialMedia div {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+@media screen and (max-width: 640px) {
+  .footerContent {
+    display: block;
+  }
+  .socialMedia {
+    padding-top: 1rem;
+  }
+}
