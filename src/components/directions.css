@@ -1,0 +1,41 @@
+.directions {
+  text-align: center;
+  padding: 4rem 0 2rem 0;
+  width: 100%;
+}
+
+.directionsContainer {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.directionsCard {
+  background: #dbe2dd;
+  padding: 1.2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.directionsCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.directionsCard h2 {
+  margin-bottom: 1rem;
+}
+
+.directionsCard div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.directionsCard p {
+  margin: 0;
+}

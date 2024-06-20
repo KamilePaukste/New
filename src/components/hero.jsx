@@ -1,6 +1,7 @@
 import "./herostyle.css";
 import React from "react";
 import bali from "../assets/bali.jpg";
+
 const Hero = () => {
   return (
     <div className="hero">
