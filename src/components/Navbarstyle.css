@@ -19,7 +19,7 @@
 }
 
 .navmenu li {
-  padding: 0 1rem;
+  padding: 1 0rem;
 }
 
 .hamburgermenu {
@@ -36,14 +36,16 @@ h1 {
     align-items: center;
     width: 100%;
     background: rgba(72, 83, 66, 0.9);
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 90px;
     left: -100%;
     z-index: -3;
     transition: 0.5s;
   }
   .navmenu.active {
+    top: 90px;
     left: 0;
+    background-color: rgba(72, 83, 66, 0.5);
   }
   .navmenu li {
     padding: 1rem 0;
