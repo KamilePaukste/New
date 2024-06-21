@@ -1,38 +1,49 @@
 import "./directions.css";
-import React from "react";
-import maldives from "../assets/maldives.jpg";
-import bali from "../assets/balidirections.jpg";
-import madagascar from "../assets/madagascar.jpg";
-import seychelles from "../assets/seychelles.jpg";
+import React, { useState } from "react";
+import maldives1 from "../assets/maldives.jpg";
+import maldives2 from "../assets/maldives2.jpg";
+import bali1 from "../assets/balidirections.jpg";
+import bali2 from "../assets/bali2.jpg";
+import madagascar1 from "../assets/madagascar.jpg";
+import madagascar2 from "../assets/madagascar2.jpg";
+import seychelles1 from "../assets/seychelles.jpg";
+import seychelles2 from "../assets/seychelles2.jpg";
 import { Link } from "react-router-dom";
 
 const DirectionCard = ({
   name,
-  imgSrc,
+  imgSrcs,
   link,
   nights,
   hotelName,
   allInclusive,
-}) => (
-  <div className="directionsCard">
-    <h2 className="directionName">{name}</h2>
-    <img src={imgSrc} alt={`${name} island`} />
-    <div className="details">
-      <div>
+}) => {
+  const [currentImg, setCurrentImg] = useState(0);
+
+  const handleImageClick = () => {
+    setCurrentImg((prevImg) => (prevImg + 1) % imgSrcs.length);
+  };
+
+  return (
+    <div className="directionsCard">
+      <h2 className="directionName">{name}</h2>
+      <img
+        src={imgSrcs[currentImg]}
+        alt={`${name} island`}
+        onClick={handleImageClick}
+        className="directionImage"
+      />
+      <div className="details">
         <p>Number of Nights: {nights}</p>
-      </div>
-      <div>
         <p>Hotel: {hotelName}</p>
-      </div>
-      <div>
         <p>All Inclusive: {allInclusive ? "Yes" : "No"}</p>
+        <Link to={link}>
+          <button>Price</button>
+        </Link>
       </div>
-      <Link to={link}>
-        <button>Price</button>
-      </Link>
     </div>
-  </div>
-);
+  );
+};
 
 const Directions = () => {
   return (
@@ -41,7 +52,7 @@ const Directions = () => {
       <div className="directionsContainer">
         <DirectionCard
           name="Maldives"
-          imgSrc={maldives}
+          imgSrcs={[maldives1, maldives2]}
           link="/Kainos"
           nights={7}
           hotelName="Sunrise Beach Hotel"
@@ -49,7 +60,7 @@ const Directions = () => {
         />
         <DirectionCard
           name="Bali"
-          imgSrc={bali}
+          imgSrcs={[bali1, bali2]}
           link="/Kainos"
           nights={5}
           hotelName="Ocean View Resort"
@@ -57,7 +68,7 @@ const Directions = () => {
         />
         <DirectionCard
           name="Madagascar"
-          imgSrc={madagascar}
+          imgSrcs={[madagascar1, madagascar2]}
           link="/Kainos"
           nights={10}
           hotelName="Rainforest Retreat"
@@ -65,7 +76,7 @@ const Directions = () => {
         />
         <DirectionCard
           name="Seychelles"
-          imgSrc={seychelles}
+          imgSrcs={[seychelles1, seychelles2]}
           link="/Kainos"
           nights={8}
           hotelName="Paradise Cove"
