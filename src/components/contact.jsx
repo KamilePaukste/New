@@ -5,16 +5,14 @@ function Contact() {
   return (
     <div className="form">
       <form>
-        <label>Your name</label>
+        <label>Name:</label>
         <input type="text"></input>
-        <label>Email</label>
+        <label>Email:</label>
         <input type="email"></input>
-        <label>Phone number</label>
+        <label>Phone number:</label>
         <input type="number"></input>
-        <label>Your message</label>
-        <textarea rows="5" placeholder="Type Your Message Here">
-          {" "}
-        </textarea>
+        <label>Your message:</label>
+        <textarea rows="5" placeholder="Type Your Message Here"></textarea>
         <button className="button">Submit</button>
       </form>
     </div>
