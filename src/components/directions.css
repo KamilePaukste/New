@@ -17,13 +17,13 @@
   background: #dbe2dd;
   padding: 1.2rem 1rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   text-align: center;
 }
 
 .directionsCard img {
   max-width: 100%;
-  height: auto;
+  max-height: 516px;
   border-radius: 10px;
 }
 
@@ -32,21 +32,42 @@
 }
 
 .directionsCard div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
+
+.details {
+  display: block;
+  text-align: left;
+}
+
+.details p {
+  margin: 0.5rem 0;
+  color: #2e3a2a;
+}
+
 .directionName {
   color: #2e3a2a;
 }
 
-.directionsCard p {
-  margin: 0;
-  color: #2e3a2a;
-}
 h1 {
-  padding: auto;
+  padding-bottom: 3rem;
 }
+button {
+  border-radius: 12px;
+  color: #485342;
+  border: #c7cec9;
+  transition-duration: 0.4s;
+  padding: 0 2rem;
+  text-align: center;
+}
+button:hover {
+  background-color: #c7cec9;
+  opacity: 0.8;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #485342;
+}
+
 @media screen and (max-width: 740px) {
   .directionsContainer {
     margin: auto;
