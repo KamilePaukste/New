@@ -44,7 +44,9 @@
   margin: 0;
   color: #2e3a2a;
 }
-
+h1 {
+  padding: auto;
+}
 @media screen and (max-width: 740px) {
   .directionsContainer {
     margin: auto;
