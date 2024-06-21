@@ -19,15 +19,15 @@
 }
 
 .navmenu li {
-  padding: 1 0rem;
+  padding: 0 1rem;
 }
 
 .hamburgermenu {
   display: none;
 }
-h1 {
+/* h1 {
   padding: 1rem;
-}
+} */
 
 @media screen and (max-width: 1040px) {
   .navmenu {
