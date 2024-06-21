@@ -1,6 +1,7 @@
 import "./herostyle.css";
 import React from "react";
 import bali from "../assets/bali.jpg";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -16,9 +17,9 @@ const Hero = () => {
           need to travel. We make sure that you'll get an experience you'll
           never forget.
         </p>
-        <div Link to="/Kryptys" className="button">
+        <Link to="/Kryptys" className="button">
           DIRECTIONS
-        </div>
+        </Link>
       </div>
     </div>
   );

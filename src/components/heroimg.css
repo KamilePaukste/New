@@ -48,6 +48,14 @@
   text-align: center;
   padding: 1rem;
 }
+.button {
+  border-radius: 12px;
+  color: white;
+  border: 2px solid white;
+  transition-duration: 0.4s;
+  padding: 0.5rem 5rem;
+  margin-top: 2rem;
+}
 
 @media screen and (max-width: 640px) {
   .heroImage p {

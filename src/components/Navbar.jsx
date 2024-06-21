@@ -29,7 +29,7 @@ const Navbar = () => {
       </Link>
       <ul class={click ? "navmenu active" : "navmenu"}>
         <li>
-          <Link to="/">About Us</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/Kainos">Prices</Link>

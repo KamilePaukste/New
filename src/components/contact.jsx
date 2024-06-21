@@ -5,6 +5,7 @@ function Contact() {
   return (
     <div className="form">
       <form>
+        <h2>Contact us!</h2>
         <label>Name:</label>
         <input type="text"></input>
         <label>Email:</label>
@@ -13,7 +14,7 @@ function Contact() {
         <input type="number"></input>
         <label>Your message:</label>
         <textarea rows="5" placeholder="Type Your Message Here"></textarea>
-        <button className="button">Submit</button>
+        <button className="btn">Submit</button>
       </form>
     </div>
   );

@@ -23,6 +23,7 @@ a {
   color: white;
   border: 2px solid white;
   transition-duration: 0.4s;
+  padding: 0.5rem;
 }
 .button:hover {
   background-color: #c7cec9;
