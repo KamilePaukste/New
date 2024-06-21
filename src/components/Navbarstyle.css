@@ -25,6 +25,9 @@
 .hamburgermenu {
   display: none;
 }
+h1 {
+  padding: 1rem;
+}
 
 @media screen and (max-width: 1040px) {
   .navmenu {
