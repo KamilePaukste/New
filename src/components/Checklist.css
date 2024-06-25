@@ -1,0 +1,76 @@
+.App {
+  font-family: Arial, sans-serif;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #dbe2dd;
+}
+
+.App h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+button {
+  border-radius: 12px;
+  color: #485342;
+  border: #c7cec9;
+  transition-duration: 0.4s;
+  text-align: center;
+  padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+}
+button:hover {
+  background-color: #c7cec9;
+  opacity: 0.8;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #485342;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: white;
+}
+
+li button {
+  margin-left: auto;
+  padding: 5px 10px;
+  background-color: #c7cec9;
+}
+
+li button:hover {
+  background-color: #d66850;
+  color: white;
+  transition: 0.5s;
+}

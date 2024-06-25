@@ -4,6 +4,7 @@ import Hero from "../components/hero";
 import Footer from "../components/footer";
 import Directions from "../components/directions";
 import Contact from "../components/contact";
+import Checklist from "../components/Checklist";
 
 const Apiemus = () => {
   return (
@@ -11,6 +12,7 @@ const Apiemus = () => {
       <Navbar />
       <Hero />
       <Directions />
+      <Checklist />
       <Contact />
       <Footer />
     </div>

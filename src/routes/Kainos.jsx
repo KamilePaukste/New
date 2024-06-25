@@ -12,6 +12,7 @@ const Kainos = () => {
         heading="Travel Prices"
         text="The price depends on the destination, hotel, and the number of nights you want to stay."
       />
+
       <Footer />
     </div>
   );
