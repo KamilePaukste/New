@@ -35,7 +35,7 @@ Start the development server: npm start
     Git Clone https://github.com/KamilePaukste/New
     cd my-app
 
-# Autor
+# Author
 
     Kamilė Paukštė
     kamile.paukste1@gmail.com
