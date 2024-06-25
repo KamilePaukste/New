@@ -38,7 +38,7 @@ const DirectionCard = ({
         <p>Hotel: {hotelName}</p>
         <p>All Inclusive: {allInclusive ? "Yes" : "No"}</p>
         <Link to={link}>
-          <button>Price</button>
+          <button>Directions</button>
         </Link>
       </div>
     </div>
