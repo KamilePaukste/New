@@ -17,7 +17,7 @@
 }
 .heroImage::before {
   content: "";
-  background-image: url(/Users/adpt011/Desktop/my-app/src/assets/heroimg.jpg);
+  background-image: url(/Users/adpt011/Desktop/Exam/my-app/src/assets/heroimg.jpg);
   background-size: cover;
   background-position: center top;
   height: 100%;

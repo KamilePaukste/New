@@ -12,7 +12,9 @@ const Apiemus = () => {
       <Navbar />
       <Hero />
       <Directions />
-      <Checklist />
+      <React.StrictMode>
+        <Checklist />
+      </React.StrictMode>
       <Contact />
       <Footer />
     </div>
